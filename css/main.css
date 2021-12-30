@@ -41,8 +41,9 @@ body {
 
 /* header  */
 header {
-  position: absolute;
+  position: fixed;
   left: 0;
+  top: 0;
   width: 100%;
   z-index: 2;
   background-color: var(--clr-secondary);
@@ -93,6 +94,7 @@ header .links {
 header .links li a {
   display: block;
   font-size: var(--fs-main);
+  color: var(--clr-main);
   padding: 10px 20px;
   margin: 0 5px;
   transition: var(--trans-time);
