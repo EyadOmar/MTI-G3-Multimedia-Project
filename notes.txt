@@ -1,0 +1,4 @@
+main font-size = 23px, 1.437rem
+main font-family = Montserrat
+main color = white
+seconadry color = black
