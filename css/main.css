@@ -183,25 +183,36 @@ footer .container p {
   top: -2px;
   box-shadow: 0 4px 5px rgba(255, 255, 255, 0.6);
 }
-.card h1 {
+.card::before {
+  content: "Before";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 50%;
+  transform: translateX(-50%);
   font-size: var(--fs-main);
-  text-align: center;
+  font-weight: bold;
+  color: var(--clr-secondary);
+  letter-spacing: 0.15rem;
+  padding: 10px 20px;
 }
-@media (max-width: 768px) {
-  .card h1 {
-    font-size: 1rem;
-  }
+.card.after::before {
+  content: "After";
 }
+
 .card .thumb img {
   background-image: cover;
   background-position: center center;
 }
 .card figure {
-  padding: 20px;
+  padding: 15px;
   flex: 1;
   display: flex;
   justify-content: flex-start;
   gap: 10px;
+}
+.band figure img {
+  width: 75px;
+  max-width: 100%;
 }
 .card figure article {
   display: flex;
@@ -209,7 +220,6 @@ footer .container p {
   justify-content: center;
   flex: 1;
 }
-.band figure img {
-  width: 50px;
-  max-width: 100%;
+.card figure article h1 {
+  font-size: var(--fs-main);
 }
