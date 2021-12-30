@@ -124,7 +124,8 @@ footer {
   bottom: 0;
   width: 100%;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 992px) {
   footer {
     background-color: var(--clr-secondary);
     position: relative;
@@ -139,9 +140,16 @@ footer .container {
 }
 
 footer .container p {
-  padding: 40px 0;
+  padding: 40px;
   font-weight: bold;
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  footer .container p {
+    padding: 20px;
+    font-size: 0.6rem;
+  }
 }
 
 /* baand */
@@ -155,7 +163,7 @@ footer .container p {
   grid-template-rows: auto;
   grid-gap: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .band .container {
     grid-template-columns: 1fr;
   }
@@ -204,10 +212,4 @@ footer .container p {
 .band figure img {
   width: 50px;
   max-width: 100%;
-}
-
-@media (max-width: 768px) {
-  .band .item-1:last-of-type {
-    /* display: none; */
-  }
 }
