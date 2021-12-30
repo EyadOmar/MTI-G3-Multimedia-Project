@@ -195,6 +195,11 @@ footer .container p {
   letter-spacing: 0.15rem;
   padding: 10px 20px;
 }
+@media (max-width: 768px) {
+  .card::before {
+    font-size: 0.8rem;
+  }
+}
 .card.after::before {
   content: "After";
 }
@@ -214,6 +219,12 @@ footer .container p {
   width: 75px;
   max-width: 100%;
 }
+@media (max-width: 768px) {
+  .band figure img {
+    width: 50px;
+  }
+}
+
 .card figure article {
   display: flex;
   flex-direction: column;
@@ -222,4 +233,9 @@ footer .container p {
 }
 .card figure article h1 {
   font-size: var(--fs-main);
+}
+@media (max-width: 768px) {
+  .card figure article h1 {
+    font-size: 1.1rem;
+  }
 }
